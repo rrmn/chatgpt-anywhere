@@ -13,7 +13,7 @@ This is a beginner's guide for deploying a simple ChatGPT application using Flas
 5. **Key Areas to Focus**: 
     - **Working Directory**: `pythonanywhere.com/user/{username}/files/home/{webappname}`
     - **Web App Admin Interface**: `pythonanywhere.com/user/{username}/webapps/`
-    - **Bash Console**: Accessible from `pythonanywhere.com/user/{username}/` under **CONSOLES**.
+    - **Bash Console**: Accessible from `pythonanywhere.com/user/{username}/` under **Consoles**.
 
 ### Step 2: Set Up Python
 1. **Move Files to Working Directory**: Transfer all necessary files into your working directory.
@@ -22,7 +22,7 @@ This is a beginner's guide for deploying a simple ChatGPT application using Flas
     - Execute `python -m venv myvenv` to create a virtual environment.
     - Activate it with `source myvenv/bin/activate`. Your console should now show `(myvenv)` prefix.
     - Check with `which python`. It should display something like `.../myvenv/bin/python`.
-4. **Install Dependencies**: Run `pip install -r requirements.txt` and resolve any installation errors.
+4. **Install Dependencies**: Run `pip install -r requirements.txt` and resolve any installation errors. This usually takes some effort, but most things can be resolved with Googling.
 
 ### Step 3: Set Up OpenAI
 
