@@ -49,10 +49,16 @@ This is a tutorial and flask/bulma/mysql template to deploy a simple ChatGPT app
 1. Next to the `Name` of your `Assistant` you will see an `ID` that looks something like this: `sk-abc123abc123abc`. Leave this window open.
     1. ATTENTION: This will only be shown ONCE! If you fail to write this value down, you will need to create a new set of keys.
 1. In another window, go back to your `.env` file. 
-1. OVERWRITE the value of the `OPENAI_API_KEY` with your new key, so it reads `OPENAI_API_KEY = "sk-abc123abc123abc"` (or whatever your key is)
+1. OVERWRITE the value of the `OPENAI_API_KEY` with your new key, so it reads
+    ```
+    OPENAI_API_KEY = "sk-abc123abc123abc"
+    ```
+    (or whatever your key is)
 
 ## 3. Done
 1. Run flask (e.g. by pressing `Reload Webapp` on PythonAnywhere.com)
+1. Go to  {username).pythonanywhere.com to see your web app running.
+1. ???
 1. Profit 🤩
 
 This was a quick write-up. If you run into any errors or problems, feel free to open up an issue here on Github.
