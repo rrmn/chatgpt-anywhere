@@ -1,67 +1,52 @@
-# ChatGPT Anywhwere
-This is a tutorial and flask/bulma/mysql template to deploy a simple ChatGPT app on PythonAnywhere.com
+# ChatGPT Anywhere: Beginner's Guide
+This is a beginner's guide for deploying a simple ChatGPT application using Flask and Bulma on PythonAnywhere.com. This tutorial will help you set up your own ChatGPT app, even if you're new to programming or web development.
 
 ![chatgpt-anywhere](https://github.com/rrmn/chatgpt-anywhere/assets/14080347/0a73b07e-099c-4369-a2d4-43a77aaa6984)
 
+## Getting Started
 
-# Installation
+### Step 1: Sign Up on PythonAnywhere
+1. **Create a PythonAnywhere Account**: Visit [PythonAnywhere.com](https://www.pythonanywhere.com/?affiliate_id=00ffc226) and sign up. You can start with a free account. 
+2. **Note Your Username**: Remember your username. You'll need it for setting up your web app.
+3. **Create a Web App**: Once logged in, use the dashboard to create a new web app. Note down your `webappname`.
+4. **Familiarize with the Dashboard**: Explore the **Consoles** section. You'll use a `bash console` here.
+5. **Key Areas to Focus**: 
+    - **Working Directory**: `pythonanywhere.com/user/{username}/files/home/{webappname}`
+    - **Web App Admin Interface**: `pythonanywhere.com/user/{username}/webapps/`
+    - **Bash Console**: Accessible from `pythonanywhere.com/user/{username}/` under **CONSOLES**.
 
-## 0. Create an account on PythonAnywhere.com
-1. Create an account on PythonAnywhere.com. It can be a free account for starters. If you want to support me you can use this affiliate [link to PythonAnywhere.com](https://www.pythonanywhere.com/?affiliate_id=00ffc226).
-1. Remember your `username` (the user name which you use to login into PythonAnywhere.com). It will be important later.
-1. Once you have created an account, create a web app through the interface. Remember your `webappname`.
-1. Also check out the **Consoles** part of the dashboard. You will need to create and use a `bash console` later.
-1. Once you are comfortable with the interface, you can basically focus on these 3 important places:
-    1. **Working directory**: pythonanywhere.com/user/{username}/files/home/{webappname}
-    1. **Web App Admin Interface**: pythonanywhere.com/user/{username}/webapps/`
-    1. **Bash console**: pythonanywhere.com/user/{username}/ --> CONSOLES
+### Step 2: Set Up Python
+1. **Move Files to Working Directory**: Transfer all necessary files into your working directory.
+2. **Launch a Bash Console**: From the dashboard, open a bash console.
+3. **Create a Virtual Environment**:
+    - Execute `python -m venv myvenv` to create a virtual environment.
+    - Activate it with `source myvenv/bin/activate`. Your console should now show `(myvenv)` prefix.
+    - Check with `which python`. It should display something like `.../myvenv/bin/python`.
+4. **Install Dependencies**: Run `pip install -r requirements.txt` and resolve any installation errors.
 
-## 1. Setup Python
+### Step 3: Set Up OpenAI
 
-1. Copy all files into your **working directory** 
-1. Open a **bash console**
-1. Create a virtual environment so that everything regarding Python's versions is nice and separated:
-    1. Run `venv python -m venv myvenv`
-    1. Run `source myvenv/bin/active` 
-    1. Your console should now have a `(myenv)` prefix
-    1. To verify that it works, run `which python`. It should look something like this: `username/myvenv/bin/python` (the important part is `myvenv`)
-1. Install necessary packages: `pip install -r requirements.txt`. Resolve all errors as they arise.
+#### Creating an OpenAI Account
+1. **Register for OpenAI**: Sign up for a paid account on OpenAI (around $20/month).
 
-## 2. Setup OpenAI
+#### Setting Up Assistant ID
+1. **Create an Assistant on OpenAI**: Visit [OpenAI's platform](https://platform.openai.com), and create a new Assistant. You can use `gpt-4` as the model.
+2. **Note the Assistant ID**: Find the `ID` next to your Assistant’s name, like `asst_AAA...`. Keep this window open.
+3. **Configure `.env` File**:
+    - In your working directory, find or create a `.env` file.
+    - Replace the `OPENAI_ASSISTANT_ID` value with your Assistant's ID.
 
-### Account
-1. Get an OpenAI paid account (something like 20$ / month)
+#### Generating API Keys
+1. **Create API Keys on OpenAI**: Still on [OpenAI's platform](https://platform.openai.com), generate a new set of API keys.
+2. **Secure Your API Key**: Note the key, which looks like `sk-abc123...`. It's shown only once!
+3. **Update `.env` File**:
+    - Return to the `.env` file.
+    - Update `OPENAI_API_KEY` with your new API key.
 
-### Assistant ID
-1. Go to platform.openai.com
-1. Create a new `Assistant` (You can leave most fields blank for starters. I recommend using `gpt-4` as the model, but it's up to you)
-1. Next to the `Name` of your `Assistant` you will see an `ID` that looks something like this: `asst_AAAaaaaa12341234bbBBBbb`. Leave this window open.
-1. In another window, go to a file called `.env` in your working directory. (If it doesn't exist: create a file with this name) 
-1. OVERWRITE the value of the `OPENAI_ASSISTANT_ID` with your new ID, so it reads
-    ```
-    OPENAI_ASSISTANT_ID = "asst_AAAaaaaa12341234bbBBBbb"
-    ```
-    (or whatever your Assistant's ID is)
+### Step 4: Launch Your App
+1. **Start Flask**: Use PythonAnywhere's interface to run Flask, usually with `Reload Webapp`.
+2. **Access Your Web App**: Visit `{username}.pythonanywhere.com` to see your app in action.
+3. **Enjoy Your Creation**: Experiment and explore your new ChatGPT app!
+4. **Celebrate 🎉**: You've successfully deployed a ChatGPT app!
 
-### API Keys
-1. Go to platform.openai.com
-1. Create a new set of `API Keys` 
-1. Next to the `Name` of your `Assistant` you will see an `ID` that looks something like this: `sk-abc123abc123abc`. Leave this window open.
-    1. ATTENTION: This will only be shown ONCE! If you fail to write this value down, you will need to create a new set of keys.
-1. In another window, go back to your `.env` file. 
-1. OVERWRITE the value of the `OPENAI_API_KEY` with your new key, so it reads
-    ```
-    OPENAI_API_KEY = "sk-abc123abc123abc"
-    ```
-    (or whatever your key is)
-
-## 3. Done
-1. Run flask (e.g. by pressing `Reload Webapp` on PythonAnywhere.com)
-1. Go to  {username).pythonanywhere.com to see your web app running.
-1. ???
-1. Profit 🤩
-
-This was a quick write-up. If you run into any errors or problems, feel free to open up an issue here on Github.
-
-
-
+For any issues or questions, feel free to open an issue on this Github repository.
