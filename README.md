@@ -11,9 +11,9 @@ This is a tutorial and flask/bulma/mysql template to deploy a simple ChatGPT app
 1. Once you have created an account, create a web app through the interface. Remember your `webappname`.
 1. Also check out the `CONSOLES` part of the dashboard. You will need to creat and use a `bash console` later.
 1. Once you are comfortable with the interface, you can basically focus on these 3 important places:
-    1. Working directory: https://www.pythonanywhere.com/user/`username`/files/home/`webappname`
-    1. Web App Admin Interface: https://www.pythonanywhere.com/user/`username`/webapps/`
-    1. Bash console: https://www.pythonanywhere.com/user/`username`/ --> CONSOLES
+    1. Working directory: https://www.pythonanywhere.com/user/{username}/files/home/{webappname}
+    1. Web App Admin Interface: https://www.pythonanywhere.com/user/{username}/webapps/`
+    1. Bash console: https://www.pythonanywhere.com/user/{username}/ --> CONSOLES
 ## 1. Setup Python
 1. Copy all files into your working directory 
 1. Open a bash console
