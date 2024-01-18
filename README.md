@@ -2,7 +2,7 @@
 This is a tutorial and flask/bulma/mysql template to deploy a simple ChatGPT app on PythonAnywhere.com
 
 # Installation
-## Setup Python
+## 1. Setup Python
 1. Copy all files into your working directory 
 1. Open a bash console
 1. Create a virtual environment so that everything regarding Python's versions is nice and separated:
@@ -12,7 +12,7 @@ This is a tutorial and flask/bulma/mysql template to deploy a simple ChatGPT app
     1. To verify that it works, run `which python`. It should look something like this: `username/myvenv/bin/python` (the important part is `myvenv`)
 1. Install necessary packages: `pip install -r requirements.txt`. Resolve all errors as they arise.
 
-## Setup OpenAI
+## 2. Setup OpenAI
 ### Account
 1. Get an OpenAI paid account (something like 20$ / month)
 ### Assistant ID
@@ -28,7 +28,7 @@ This is a tutorial and flask/bulma/mysql template to deploy a simple ChatGPT app
     1. ATTENTION: This will only be shown ONCE! If you fail to write this value down, you will need to create a new set of keys.
 1. In another window, go back to your `.env` file. 
 1. OVERWRITE the value of the `OPENAI_API_KEY` with your new key, so it reads `OPENAI_API_KEY = "sk-abc123abc123abc"` (or whatever your key is)
-### Done
+## 3. Done
 1. Run flask (e.g. by pressing `Reload Webapp` on PythonAnywhere.com)
 1. Profit 🤩
 
