@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Roman A. Abashin, m@romanabashin.com">
+        <meta name="description" content="This is a simple template for a ChatGPT-powered app. It is built with flask and bulma."/>
+        <title>ChatGPT-powered App</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <section class="hero is-small is-info has-text-centered">
+            <div class="hero-body">
+                <p class="title">
+                    ChatGPT-powered App
+                </p>
+                <p class="subtitle">
+                    built with Flask + Bulma for use on PythonAnywhere.com
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="tile is-parent is-vertical">
+                <div class="tile is-child box">
+                    <h2 class="title has-text-centered is-2">Question</h2>
+                    <div class="field has-addons is-grouped is-grouped-multiline is-grouped-centered">
+                        <div class="control is-expanded">
+                            <textarea
+                                class="input is-fullwidth is-large is-size-6-mobile"
+                                type="text"
+                                style="height:100%"
+                                id="userInput"
+                                placeholder="What is the meaning of life?"
+                            ></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-child">
+                    <div class="control has-text-centered">
+                        <button class="button is-success is-rounded is-large" type="submit" id="generateButton">Generate</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section" style="padding-top:0;" id="questions-section">
+                <div class="tile is-parent is-vertical">
+                    <div class="tile is-parent is-vertical box">
+                        <div class="tile is-child">
+                            <h2 class="title has-text-centered is-2">🗣️📝💬<br/>Answer</h2>
+                        </div>
+                        <div class="tile is-child content">
+                            <p id="answer-container">
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="static/script.js"></script>
+            </body>
+        </html>
