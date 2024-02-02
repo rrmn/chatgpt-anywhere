@@ -4,7 +4,13 @@ Deploy a ChatGPT app in 15 minutes.
 ![chatgpt-anywhere](https://github.com/rrmn/chatgpt-anywhere/assets/14080347/0a73b07e-099c-4369-a2d4-43a77aaa6984)
 
 # Beginner's Guide
-This is a beginner's guide for deploying a simple ChatGPT application using Flask and Bulma on PythonAnywhere.com. This tutorial will help you set up your own ChatGPT app, even if you're new to programming or web development.
+This is a beginner's guide for deploying a simple ChatGPT app built with Python. 
+
+* No complicated toolchains
+* No SASS/SCSS stuff
+* No server administration
+
+**This tutorial will help you set up your own ChatGPT app, even if you're new to programming or web development.**
 
 ## Getting Started
 
