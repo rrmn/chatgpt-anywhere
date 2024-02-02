@@ -6,7 +6,7 @@ This is a beginner's guide for deploying a simple ChatGPT application using Flas
 ## Getting Started
 
 ### Step 1: Sign Up on PythonAnywhere
-1. **Create a PythonAnywhere Account**: Visit [PythonAnywhere.com](https://www.pythonanywhere.com/?affiliate_id=00ffc226) and sign up. You can start with a free account. 
+1. **Create a PythonAnywhere Account**: Visit PythonAnywhere.com  and sign up. (You can use this [affiliate link](https://www.pythonanywhere.com/?affiliate_id=00ffc226) if you want to support me). You can start with a free account. 
 2. **Note Your Username**: Remember your username. You'll need it for setting up your web app.
 3. **Create a Web App**: Once logged in, use the dashboard to create a new web app. Note down your `webappname`.
 4. **Familiarize with the Dashboard**: Explore the **Consoles** section. You'll use a `bash console` here.
